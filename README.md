@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Exercise submission for an E-Commerce web application
 
 This exercise project was made with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -9,7 +9,7 @@ This exercise project was made with [Create React App](https://github.com/facebo
 
 ### Screenshot
 
-![](./src/design/E-commerce-flowchart.drawio.png)
+![](./src/design/E-commerce-flowchart.png)
 
 ## Exercise instructions had the following tasks
 
