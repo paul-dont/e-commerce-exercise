@@ -1,70 +1,36 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This exercise project was made with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Links
 
-In the project directory, you can run:
+- Solution URL: https://github.com/paul-dont/e-commerce-exercise
+- Live Site URL: https://monumental-choux-a35f9b.netlify.app
 
-### `npm start`
+### Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![](./src/design/E-commerce-flowchart.drawio.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Exercise instructions had the following tasks
 
-### `npm test`
+1. Please create a simple single page browser application where the user can add/remove items into their basket from a pool of priced items (dummy, hard-coded within the App).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Basket should display total price and allow for quantity changes.
 
-### `npm run build`
+3. When total exceeds €100 then apply 10% discount and notify user.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. A "buy" button should log (in console) an XML with the minimum amount of data required to describe the state of the basket (assume that this is to be sent to the back-end managing the items).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Basket should survive browser refreshes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Technical details:
 
-### `npm run eject`
+Application and unit tests should be written in JavaScript using custom code or your favorite framework.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+There is no need to do anything special about styling (CSS).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Please do not implement anything outside of requirements (e.g database persistence, users and roles, authentication etc).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Deliverable should be a zip containing the sources of the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Note that if zip can't be delivered via email due to security/spam filters, please send it over via a public dropbox link, a github link or wetransfer.
