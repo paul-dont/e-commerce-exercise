@@ -7,7 +7,7 @@ This exercise project was made with [Create React App](https://github.com/facebo
 - Solution URL: https://github.com/paul-dont/e-commerce-exercise
 - Live Site URL: https://monumental-choux-a35f9b.netlify.app
 
-### Screenshot
+### A Flowchart was designed and followed based on given tasks to make the coding process easier.
 
 ![](./src/design/E-commerce-flowchart.png)
 
