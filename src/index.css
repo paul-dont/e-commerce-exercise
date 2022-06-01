@@ -29,6 +29,20 @@ h6 {
 button {
   width: 100%;
   cursor: pointer;
+  background-color: dodgerblue;
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  transition: all 200ms ease-in-out;
+  border: 2px solid transparent;
+}
+
+button:hover {
+  background-color: lightcyan;
+  color: dodgerblue;
+  border-color: dodgerblue;
 }
 
 img {

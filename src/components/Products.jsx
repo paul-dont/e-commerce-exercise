@@ -1,4 +1,5 @@
 import React from 'react';
+import Product from './Product';
 
 const Products = props => {
   const { products } = props;
@@ -7,15 +8,9 @@ const Products = props => {
     <main className="col-1">
       <h3>Products</h3>
       <div className="items">
-        {products.map(product => {
-          return (
-            <div className="item">
-              <img src={product.imgUrl} alt={product.name} />
-              <div>{product.name}</div>
-              <button>Add to Cart</button>
-            </div>
-          );
-        })}
+        {products.map(product => (
+          <Product key={product.id} product={product}></Product>
+        ))}
       </div>
     </main>
   );
