@@ -28,7 +28,7 @@ const Basket = props => {
       <h3>Basket</h3>
       <hr />
       <div className="empty">
-        {basketItems.length === 0 && <div>Your Cart is empty</div>}
+        {basketItems.length === 0 && <div>Your Basket is empty</div>}
       </div>
       {basketItems.map(item => (
         <div key={item.id} className="flex">
