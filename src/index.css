@@ -24,25 +24,7 @@ h4,
 h5,
 h6 {
   text-align: center;
-}
-
-button {
-  width: 100%;
-  cursor: pointer;
-  background-color: dodgerblue;
-  color: #fff;
-  border-radius: 10px;
-  border: 0;
-  font-weight: 600;
-  padding: 0.5rem 0;
-  transition: all 200ms ease-in-out;
-  border: 2px solid transparent;
-}
-
-button:hover {
-  background-color: lightcyan;
-  color: dodgerblue;
-  border-color: dodgerblue;
+  margin-bottom: 1rem;
 }
 
 img {
@@ -60,12 +42,16 @@ img {
   flex: 2;
   background-color: lightcyan;
   border-radius: 5px;
+  padding: 2rem;
 }
 
 .col-2 {
   flex: 1;
   background-color: lightcyan;
   border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 0.3rem;
 }
 
 .items {
@@ -73,7 +59,6 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   justify-items: center;
-  padding: 2rem;
 }
 
 .item {
@@ -81,4 +66,94 @@ img {
   text-align: center;
   text-transform: capitalize;
   font-weight: 600;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: inherit;
+  color: dodgerblue;
+  border-radius: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  transition: all 200ms ease-in-out;
+  border: 2px solid dodgerblue;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.empty {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.top {
+  margin-top: 5px;
+}
+
+.quant {
+  text-align: right;
+}
+
+.total {
+  text-align: right;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.add {
+  border-radius: 50%;
+  background-color: lightgreen;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.rem {
+  border-radius: 50%;
+  background-color: tomato;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.buy {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background-color: rgb(32, 139, 245);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.buy:hover {
+  background-color: rgba(32, 139, 245, 0.85);
+}
+
+.hidden {
+  display: none;
 }
