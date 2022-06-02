@@ -22,7 +22,7 @@ const Basket = props => {
     );
     onBuy();
   };
-
+  console.log(basketItems.length);
   return (
     <aside className="col-2">
       <h2>Basket</h2>
@@ -47,20 +47,24 @@ const Basket = props => {
         </div>
       ))}
       <hr />
-      <div className="total">
-        Total: {totalPrice >= 100 ? totalPrice - totalPrice * 0.1 : totalPrice}{' '}
-        €
-      </div>
-      <div className="total">
-        {totalPrice >= 100 ? '10% Discount Applied 💰' : ''}
-      </div>
-      <button className="buy btn btn-primary" onClick={onBuyHandler}>
-        Buy
-      </button>
+      {basketItems.length !== 0 && (
+        <div>
+          <div className="total">
+            Total:{' '}
+            {totalPrice >= 100 ? totalPrice - totalPrice * 0.1 : totalPrice} €
+          </div>
+          <div className="total">
+            {totalPrice >= 100 ? '10% Discount Applied 💰' : ''}
+          </div>
+          <button className="buy btn btn-primary" onClick={onBuyHandler}>
+            Buy
+          </button>
 
-      <button className="clear buy" onClick={onBuy}>
-        Clear Basket
-      </button>
+          <button className="clear buy" onClick={onBuy}>
+            Clear Basket
+          </button>
+        </div>
+      )}
     </aside>
   );
 };
