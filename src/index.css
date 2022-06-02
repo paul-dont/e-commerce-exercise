@@ -42,7 +42,8 @@ img {
   flex: 2;
   background-color: lightcyan;
   border-radius: 5px;
-  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .col-2 {
@@ -51,7 +52,7 @@ img {
   border-radius: 5px;
   text-transform: capitalize;
   font-weight: 600;
-  padding: 0.3rem;
+  padding: 1rem;
 }
 
 .items {
@@ -141,8 +142,6 @@ img {
   width: 70%;
   padding: 0.5rem;
   border-radius: 2rem;
-  background-color: rgb(32, 139, 245);
-  color: #fff;
   text-transform: uppercase;
   font-weight: 700;
   border: 2px solid transparent;
@@ -150,7 +149,22 @@ img {
   transition: all 0.15s ease-in-out;
 }
 
-.buy:hover {
+.btn-primary {
+  background-color: rgb(32, 139, 245);
+  color: #fff;
+}
+
+.clear {
+  margin-top: 1rem;
+  background-color: rgb(255, 101, 74);
+  color: #fff;
+}
+
+.clear:hover {
+  background-color: rgba(255, 101, 74, 0.85);
+}
+
+.buy-primary:hover {
   background-color: rgba(32, 139, 245, 0.85);
 }
 
