@@ -16,7 +16,7 @@ const Basket = props => {
         name: item.name,
         price: item.price,
         quantity: item.quantity,
-        totalPrice: item.price * item.quantity,
+        // totalPrice: item.price * item.quantity, // if total price for each item is needed
       })),
       'This is the solution to sending the data to the back-end using the dirxml method'
     );
@@ -25,7 +25,7 @@ const Basket = props => {
 
   return (
     <aside className="col-2">
-      <h3>Basket</h3>
+      <h2>Basket</h2>
       <hr />
       <div className="empty">
         {basketItems.length === 0 && <div>Your Basket is empty</div>}
@@ -54,8 +54,12 @@ const Basket = props => {
       <div className="total">
         {totalPrice >= 100 ? '10% Discount Applied 💰' : ''}
       </div>
-      <button className="buy" onClick={onBuyHandler}>
+      <button className="buy btn btn-primary" onClick={onBuyHandler}>
         Buy
+      </button>
+
+      <button className="clear buy" onClick={onBuy}>
+        Clear Basket
       </button>
     </aside>
   );
