@@ -15,19 +15,19 @@ const data = {
     {
       id: '3',
       name: 'watch',
-      price: '19',
+      price: '20',
       imgUrl: 'https://picsum.photos/id/175/225/150',
     },
     {
       id: '4',
       name: 'software',
-      price: '285',
+      price: '10',
       imgUrl: 'https://picsum.photos/id/180/225/150',
     },
     {
       id: '5',
       name: 'glasses',
-      price: '99',
+      price: '50',
       imgUrl: 'https://picsum.photos/id/201/225/150',
     },
     {
