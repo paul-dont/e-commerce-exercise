@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Basket = props => {
-  const { basketItems, onAddPrd, onRemovePrd, onBuy } = props;
-
+  const { basketItems, onAddPrd, onRemovePrd, onClear } = props;
   const totalPrice = basketItems.reduce(
     (acc, curr) => acc + curr.price * curr.quantity,
     0
@@ -10,19 +9,13 @@ const Basket = props => {
 
   // On Buy send back-end the needed information excluding the product img
   const onBuyHandler = () => {
-    console.dirxml(
-      basketItems.map(item => ({
-        id: item.id,
-        name: item.name,
-        price: item.price,
-        quantity: item.quantity,
-        // totalPrice: item.price * item.quantity, // if total price for each item is needed
-      })),
-      'This is the solution to sending the data to the back-end using the dirxml method'
-    );
-    onBuy();
+    console.log(basketItems.map(item => <id>{item.id}</id>));
+    onClear();
   };
-  console.log(basketItems.length);
+  const number = Intl.NumberFormat('gr-el', {
+    style: 'currency',
+    currency: 'EUR',
+  });
   return (
     <aside className="col-2">
       <h2>Basket</h2>
@@ -42,7 +35,7 @@ const Basket = props => {
             </button>
           </div>
           <div className="col-2 quant">
-            {item.quantity} <small>x</small> {item.price} €
+            {item.quantity} <small>x</small> {number.format(item.price)}
           </div>
         </div>
       ))}
@@ -51,7 +44,9 @@ const Basket = props => {
         <div>
           <div className="total">
             Total:{' '}
-            {totalPrice >= 100 ? totalPrice - totalPrice * 0.1 : totalPrice} €
+            {totalPrice >= 100
+              ? number.format(totalPrice - totalPrice * 0.1)
+              : number.format(totalPrice)}
           </div>
           <div className="total">
             {totalPrice >= 100 ? '10% Discount Applied 💰' : ''}
@@ -60,7 +55,7 @@ const Basket = props => {
             Buy
           </button>
 
-          <button className="clear buy" onClick={onBuy}>
+          <button className="clear buy" onClick={onClear}>
             Clear Basket
           </button>
         </div>

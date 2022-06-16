@@ -57,7 +57,7 @@ function App() {
     }
   };
 
-  const onBuy = () => {
+  const onClear = () => {
     setBasketItems([]);
     localStorage.clear();
   };
@@ -70,7 +70,7 @@ function App() {
           basketItems={basketItems}
           onAddPrd={onAddPrd}
           onRemovePrd={onRemovePrd}
-          onBuy={onBuy}
+          onClear={onClear}
         />
       </Wrapper>
     </>
