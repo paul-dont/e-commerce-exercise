@@ -1,21 +1,26 @@
 import React from 'react';
 
+const XMLMapping = require('xml-mapping');
+
 const Basket = props => {
   const { basketItems, onAddPrd, onRemovePrd, onClear } = props;
   const totalPrice = basketItems.reduce(
     (acc, curr) => acc + curr.price * curr.quantity,
     0
   );
-
+  const saved = basketItems.map(item => {
+    return { id: item.id, qty: item.quantity };
+  });
   // On Buy send back-end the needed information excluding the product img
   const onBuyHandler = () => {
-    console.log(basketItems.map(item => <id>{item.id}</id>));
+    console.log(XMLMapping.dump(saved));
     onClear();
   };
   const number = Intl.NumberFormat('gr-el', {
     style: 'currency',
     currency: 'EUR',
   });
+
   return (
     <aside className="col-2">
       <h2>Basket</h2>
