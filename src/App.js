@@ -18,8 +18,11 @@ function App() {
 
   // Storing basket into localStorage
   useEffect(() => {
+    const savedBasket = basketItems.map(item => {
+      return { id: item.id, price: item.price, quantity: item.quantity };
+    });
     localStorage.clear();
-    localStorage.setItem('data', JSON.stringify(basketItems));
+    localStorage.setItem('data', JSON.stringify(savedBasket));
   });
 
   // Adding products to basket functionality
